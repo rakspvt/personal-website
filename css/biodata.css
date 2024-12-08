@@ -1,0 +1,172 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Navigation and Buttons */
+nav {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 30px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Layout for Bio-data and Resume Content */
+.personal-info, .experience-section, .skills-section, .certifications-section {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 1000px;
+}
+
+.personal-info .photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.personal-info .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.personal-info .photo img:hover {
+    transform: scale(1.1);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+td {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f1f1;
+}
+
+/* Education and Experience Sections */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+/* Skills and Certifications */
+.skills-section ul, .certifications-section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-section li, .certifications-section li {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1em;
+}
+
+/* Experience Section Styling */
+.experience-section ul {
+    padding-left: 20px;
+}
+
+.experience-section li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .personal-info, .experience-section, .skills-section, .certifications-section {
+        width: 95%;
+    }
+
+    h1, h2 {
+        text-align: center;
+    }
+
+    .photo {
+        width: 100px;
+        height: 100px;
+    }
+
+    table {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 0.9em;
+        padding: 10px 25px;
+    }
+}
